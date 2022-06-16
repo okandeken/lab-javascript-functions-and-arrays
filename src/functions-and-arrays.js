@@ -1,19 +1,66 @@
 // Iteration #1: Find the maximum
-function maxOfTwoNumbers() {}
+
+
+function maxOfTwoNumbers (numberOne, numberTwo) {
+
+  if (numberOne >= numberTwo) {
+    return numberOne
+    }
+
+    else if (numberTwo > numberOne){
+      return numberTwo
+    } 
+ }
+
+
 
 
 
 // Iteration #2: Find longest word
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 
-function findLongestWord() {}
+
+function findLongestWord(words) {
+let longestWord = ""
+
+if (words.length == 0 ) { 
+  return null 
+}
+
+for (let index = 0; index < words.length; index++) {
+  if(words[index].length > longestWord.length){
+    longestWord = words[index];
+  }
+
+  
+}
+return longestWord;    
+  
+}
+
 
 
 
 // Iteration #3: Calculate the sum
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-function sumNumbers() {}
+
+
+function sumNumbers(numbers) {
+ 
+  let  sum= 0
+
+  for (let index = 0; index < numbers.length; index++) {
+   sum = sum + numbers[index];
+
+    }
+
+    return sum;
+
+}
+
+
+
 
 
 
@@ -24,15 +71,33 @@ function sum() {}
 
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
+
+
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers() {}
+
+
+function averageNumbers(numbersAvg) {
+
+  let sum = 0
+
+  for (let index = 0; index < numbersAvg.length; index++) {
+   sum = sum + numbersAvg[index];
+    
+  }
+  let averageFinal = sum / numbersAvg.length;
+  
+  return averageFinal;
+  
+}
 
 
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 
-function averageWordLength() { }
+function averageWordLength( ) {
+  
+ }
 
 // Bonus - Iteration #4.1
 function avg() {}
@@ -78,7 +143,16 @@ const wordsCount = [
   'matter'
 ];
 
-function howManyTimes() {}
+function howManyTimes(wordsCount, element) {
+  let repeat_count = 0;
+  for (let i = 0; i < howManyTimes.length; i++) {
+      if (array[i] === element) {
+          repeat_count++;
+      }
+  }
+  return repeat_count;
+
+}
 
 
 
